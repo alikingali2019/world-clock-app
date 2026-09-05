@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ساعة العالم - World Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⏰ ساعة العالم 🌍</h1>
+            <p class="subtitle">عرض الوقت في مناطق زمنية مختلفة</p>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="searchInput" class="search-box" placeholder="ابحث عن مدينة أو منطقة زمنية...">
+            <button id="addBtn" class="btn btn-add">+ إضافة منطقة</button>
+        </div>
+
+        <div class="timezone-search" id="timezoneSearch" style="display: none;">
+            <div class="search-content">
+                <input type="text" id="searchTimezone" placeholder="ابحث عن المنطقة الزمنية...">
+                <div class="timezone-list" id="timezoneList"></div>
+            </div>
+        </div>
+
+        <div class="clocks-container" id="clocksContainer">
+            <!-- Clocks will be added here dynamically -->
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <p>لم تضف أي مناطق زمنية بعد</p>
+            <p class="hint">اضغط على زر "إضافة منطقة" لبدء العمل</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
